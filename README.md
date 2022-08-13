@@ -9,7 +9,7 @@ Full score exceeded.
 
 ## Known Issues
 
-Image tearing may happen under certain scenarios due to the fact that the update frequency of the physical simulation system is **too low** and the game rendering is running under **1080p@60Hz**. You may adjust the updating frequency by manually profiling the ``GAMESYS_CLK_GEN.sv`` module. Notice that the corresponding in-game velocities has to be modified in ``CONSTANTS.vh`` file. You may encounter the case in which the gravity happens to be too *heavy*. In such case you may need to add a counter to determine the update frequency of the **vertical velocity of the player position**.
+Image tearing may happen under certain scenarios due to the fact that the update frequency of the physical simulation system is **too low** and the game rendering is running under **1080p@60Hz**. You may adjust the updating frequency by manually profiling the ``GAMESYS_CLK_GEN.sv`` module. Notice that the corresponding in-game velocities has to be modified in ``CONSTANTS.vh`` file. You may encounter such case in which the gravity happens to be too *heavy*. In that case you need to add a counter to determine the update frequency of the **vertical velocity of the player position**.
 
 For a better viewing experience it may be forcibly required to perform such profiling.
 
