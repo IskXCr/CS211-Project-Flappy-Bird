@@ -33,7 +33,7 @@ Import the constraint file in the ``Constraints`` File. Notice that this constra
 
 #### Loading all the assets
 
-##### blk_mem_gen_3 (GAMESYS_GRAPH_PROC_BKGND, Background)
+#### > blk_mem_gen_3 (GAMESYS_GRAPH_PROC_BKGND, Background)
 
 Instantiate a Vivado IP **Block Memory Generator** with its name specified as **blk_mem_gen_3**. You shall select the **Single Port ROM** option in the **Basic** tab. 
 
@@ -45,7 +45,7 @@ In the following asset loading procedures, we will only change the **Port A Dept
 
 
 
-##### blk_mem_gen_0 (GAMESYS_GRAPH_PROC_PLAYER, Player Entity 1)
+#### > blk_mem_gen_0 (GAMESYS_GRAPH_PROC_PLAYER, Player Entity 1)
 
 Port A Depth: 3264
 
@@ -53,7 +53,7 @@ Coe File: ``Source\assets\bird_0.coe``
 
 
 
-##### blk_mem_gen_1 (GAMESYS_GRAPH_PROC_PLAYER, Player Entity 2)
+#### > blk_mem_gen_1 (GAMESYS_GRAPH_PROC_PLAYER, Player Entity 2)
 
 Port A Depth: 3264
 
@@ -61,7 +61,7 @@ Coe File: ``Source\assets\bird_1.coe``
 
 
 
-##### blk_mem_gen_2 (GAMESYS_GRAPH_PROC_WALL, Wall Entity)
+#### > blk_mem_gen_2 (GAMESYS_GRAPH_PROC_WALL, Wall Entity)
 
 Port A Depth: 240
 
@@ -98,7 +98,7 @@ initial begin
 
 You shall initialize the following clocking wizards with the corresponding name.
 
-#### clk_wiz_0 (VGA Output Clock/Block Memory Synchronization Clock)
+#### > clk_wiz_0 (VGA Output Clock/Block Memory Synchronization Clock)
 
 In **Clocking Options** tab, select **MMCM** and **Frequency Synthesis**, **Phase Alignment** and **Jitter Optimization: Balanced**. 
 
