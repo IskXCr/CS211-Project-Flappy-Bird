@@ -109,6 +109,7 @@ In **Output Clocks** tab, enable only ``clk_out1`` with **Output Freq (MHz) Requ
 You need to set ``MAIN.sv`` as the top file. (Right click on the file to set it as the top file). Then use Flow Navigator to generate the corresponding bitstream file. There is also a pre-generated one for validation placed under the root folder (named ``MAIN.bit``).
 
 ## I/O Pin Specification
+The following ports have their rightmost bit as LSB. For example, the VGA ``red`` signal is declared as ``wire [3:0] red``, in which ``red[0]`` is the LSB.
 
 | Port        | Direction | Width(bit) | Function Description                                         |
 | ----------- | --------- | ---------- | ------------------------------------------------------------ |
